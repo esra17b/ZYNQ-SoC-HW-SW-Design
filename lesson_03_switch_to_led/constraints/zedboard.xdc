@@ -6,7 +6,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 create_clock -period 10.000 -name clk [get_ports clk]
 
 # User DIP switches
-# Banks 34/35 are powered by VADJ: set jumper JP18 to 3.3V to match LVCMOS33.
+# Banks 34/35 are powered by VADJ: set jumper JP18 to 2.5V to match LVCMOS25.
 set_property PACKAGE_PIN F22 [get_ports {sw_i[0]}]
 set_property PACKAGE_PIN G22 [get_ports {sw_i[1]}]
 set_property PACKAGE_PIN H22 [get_ports {sw_i[2]}]
@@ -15,7 +15,7 @@ set_property PACKAGE_PIN H19 [get_ports {sw_i[4]}]
 set_property PACKAGE_PIN H18 [get_ports {sw_i[5]}]
 set_property PACKAGE_PIN H17 [get_ports {sw_i[6]}]
 set_property PACKAGE_PIN M15 [get_ports {sw_i[7]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[*]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {sw_i[*]}]
 
 # User LEDs
 set_property PACKAGE_PIN T22 [get_ports {led_o[0]}]

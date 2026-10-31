@@ -46,7 +46,7 @@ The reports and bitstream are written to `build/`.
 
 ## Program the board
 
-1. Set jumper **JP18** to 3.3V. The switches sit on VADJ-powered banks and are constrained as `LVCMOS33`.
+1. Set jumper **JP18** to 2.5V. The switches sit on VADJ-powered banks and are constrained as `LVCMOS25`, matching the ZedBoard board file.
 2. Connect the micro-USB cable to the **PROG** port (J17), not the UART port (J14).
 3. Connect the power adapter and turn on **SW8**.
 4. In Vivado, open **Hardware Manager**, then select **Open Target > Auto Connect**.
