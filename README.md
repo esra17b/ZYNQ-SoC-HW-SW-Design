@@ -7,6 +7,7 @@ My hands-on work for the **ZYNQ SoC HW/SW Design** (*ZYNQ SoC HW/SW Tasarımı*)
 | Lesson | Topic | Summary |
 | --- | --- | --- |
 | [Lesson 3](lesson_03_switch_to_led/) | Switch to LED | First PL design: registered switch inputs drive the LEDs, built and programmed with Vivado |
+| [Lesson 4](lesson_04_axi_gpio/) | AXI GPIO block design | First PS and PL design: the PS reaches the switches and LEDs through AXI GPIO, exported as an XSA |
 
 ## Setup
 
@@ -24,6 +25,7 @@ lesson_XX_name/
 ├── src/           HDL sources
 ├── constraints/   Pin and timing constraints
 ├── scripts/       Vivado build scripts
+├── hardware/      Exported hardware platform (XSA)
 ├── bitstream/     Pre-built bitstream
 ├── reports/       Vivado reports
 └── images/        Screenshots
